@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="includes/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="includes/mystyles.css">
+</head>
+<body>
+
+	<div class="container-fluid">
+		<h1 class="text-center">Ajax CRUD with Jquery</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<h2 class="bg-warning text-warning text-center">Add / Update Student</h2>
+				<form id="myform">
+					<div class="form-group">
+						<input type="text" name="id" id="id" style="display: none;" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="name">Name</label>
+					</div>	
+					<div class="form-group">
+						<input type="text" name="name" id="name" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+					</div>
+					<div class="form-group">
+						<input type="email" name="email" id="email" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+					</div>
+					<div class="form-group">
+						<input type="password" name="password" id="password" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="submit" name="btnsave" id="btnsave" class="btn btn-primary" value="Add">
+					</div>
+					<div class="result">
+						
+					</div>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<h2 class="bg-warning text-warning text-center">Show Student Information</h2>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Password</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="includes/bootstrap.min.js"></script>
+<script type="text/javascript" src="includes/jquery.js"></script>
+<script type="text/javascript" src="includes/myajax.js"></script>
+</body>
+</html>
